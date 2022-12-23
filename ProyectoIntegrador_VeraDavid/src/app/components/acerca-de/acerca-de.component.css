@@ -1,0 +1,22 @@
+.row {
+  padding: 20px;
+}
+div {
+  background-color: #a1b5cb;
+  text-align: center;
+}
+/*equieta nombre*/
+#nombre {
+  font-weight: bold;
+  margin-top: 20%;
+
+}
+/*Estilo Foto perfil*/
+@media (min-width: 576px) {
+  #fotoperfil {
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+  }
+}
