@@ -8,5 +8,18 @@
   flex-direction: column;
   align-items: center;
   text-decoration-color: white;
+  animation: circulo 6s;
+  animation-iteration-count: initial;
+  animation-timing-function: ease;
+
+}
+
+@keyframes circulo {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
