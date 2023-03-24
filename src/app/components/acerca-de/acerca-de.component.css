@@ -2,8 +2,9 @@
   padding: 20px;
   }
 div {
-  background-color: #2e4b6b;
+  background-color: #21272e;
   text-align: center;
+  color: white;
   }
 /*equieta nombre*/
 #nombre {
@@ -16,12 +17,16 @@ div {
   #fotoperfil {
 
     border-radius: 100%;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: -1px -1px 20px #C7E596;
+    position: absolute;
+    width: 13%;
+    left: 3%;
+    top: 850px;
 
   }
   .descripcion{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 }
@@ -31,7 +36,7 @@ div {
     position: absolute;
     width: 15%;
     border-radius: 100%;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 3px 3px 3px #C7E596;
     left: 43%;
     top: 1245px;
   }

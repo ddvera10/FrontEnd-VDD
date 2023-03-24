@@ -2,8 +2,21 @@
   padding: 20px;
 }
 div {
-  background-color: #2e4b6b;
+  background-color: #21272e;
+  color: white;
 }
 h1, h3{
   display: inline;
+}
+h2, .h2 {
+  font-size: calc(1rem + 1vw);
+}
+table {
+  color: white;
+}
+h3, .h3 {
+  font-size: calc(0.9rem + 0.9vw);
+}
+.table {
+  border-color: #21272e;
 }
