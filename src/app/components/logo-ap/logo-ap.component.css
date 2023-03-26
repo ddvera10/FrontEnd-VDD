@@ -29,3 +29,6 @@ img {
   margin: 0.2em;
 }
 }
+.row {
+  --bs-gutter-x: 0rem;
+}

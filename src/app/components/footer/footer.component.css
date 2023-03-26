@@ -1,5 +1,6 @@
 .row {
   background-color: #21272e;
+  --bs-gutter-x: 0rem;
 }
 footer{
   color: #fefefe;

@@ -1,5 +1,6 @@
 .row {
   padding: 20px;
+  --bs-gutter-x: 0rem;
 }
 div {
   background-color: #21272e;

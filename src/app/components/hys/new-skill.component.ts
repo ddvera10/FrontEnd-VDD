@@ -11,6 +11,10 @@ import { SkillService } from 'src/app/service/skill.service';
 export class NewSkillComponent implements OnInit {
   nombre: string;
   porcentaje: number;
+  img: string;
+  activatedRouter: any;
+  imageService: any;
+  skill: Skill = null;
 
   constructor(private skillS: SkillService, private router: Router) { }
 
@@ -18,7 +22,7 @@ export class NewSkillComponent implements OnInit {
   }
 
   onCreate(): void{
-    const skill = new Skill(this.nombre, this.porcentaje);
+    const skill = new Skill(this.nombre, this.porcentaje, this.img);
     this.skillS.save(skill).subscribe(
       data => {
         alert("Skill creada correctamente");
@@ -28,5 +32,11 @@ export class NewSkillComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+  }
+  uploadImage($event:any){
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "skill_"+ id;
+    this.imageService.uploadImage($event, name)
+
   }
 }

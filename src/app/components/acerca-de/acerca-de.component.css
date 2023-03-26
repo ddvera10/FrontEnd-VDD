@@ -1,10 +1,12 @@
 .row {
   padding: 20px;
+  --bs-gutter-x: 0rem;
   }
 div {
   background-color: #21272e;
   text-align: center;
   color: white;
+  align-items: center;
   }
 /*equieta nombre*/
 #nombre {
@@ -17,7 +19,7 @@ div {
   #fotoperfil {
 
     border-radius: 100%;
-    box-shadow: -1px -1px 20px #C7E596;
+    box-shadow: -1px -1px 20px;
     position: absolute;
     width: 13%;
     left: 3%;
@@ -36,7 +38,7 @@ div {
     position: absolute;
     width: 15%;
     border-radius: 100%;
-    box-shadow: 3px 3px 3px #C7E596;
+    box-shadow: 3px 3px 3px;
     left: 43%;
     top: 1245px;
   }

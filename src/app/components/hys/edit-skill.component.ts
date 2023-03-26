@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skill } from 'src/app/model/skill';
+import { ImageService } from 'src/app/service/image.service';
 import { SkillService } from 'src/app/service/skill.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class EditSkillComponent implements OnInit {
   constructor(
     private skillS: SkillService,
     private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    public imageService: ImageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
@@ -38,5 +40,11 @@ export class EditSkillComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+  }
+  uploadImage($event:any){
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "skill"+ id;
+    this.imageService.uploadImage($event, name)
+
   }
 }
